@@ -22,7 +22,7 @@ class Student
   end
 
   def self.drop_table
-    DB[:conn].execute(".dump students" )
+    DB[:conn].execute("DROP TABLE ?" self)
   end
 
 end
